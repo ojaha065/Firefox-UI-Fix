@@ -6,9 +6,16 @@
     }
   }
 
-  /* Nightly Compatibility */
-  :root:not(:-moz-lwtheme) #urlbar {
-    --toolbar-field-focus-color: var(--toolbar-field-color); /* Nightly: rgba(0, 0, 0, 1)  */
-    --toolbar-field-focus-background-color: var(--toolbar-field-background-color); /* Nightly: white */
+  // #864
+  :root:not(:-moz-lwtheme) {
+    // Rollback to color
+    --toolbar-field-background-color: Field !important;
+    --toolbar-field-color: FieldText !important;
+    --toolbar-field-border-color: ThreeDShadow !important;
+
+    #urlbar-background, #searchbar {
+      // Original: light-dark(rgba(0, 0, 0, .05), rgba(0, 0, 0, .3))
+      background-color: var(--toolbar-field-background-color) !important;
+    }
   }
 }
