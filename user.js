@@ -177,6 +177,7 @@ user_pref("userChrome.tab.close_button_at_hover.always",    false); // Need clos
 user_pref("userChrome.tab.close_button_at_hover.with_selected", false);  // Need close_button_at_hover
 user_pref("userChrome.tab.sound_show_label",                false); // Need remove sound_hide_label
 user_pref("userChrome.tab.container.on_top",                false);
+user_pref("userChrome.tab.container.always_long",           false);
 user_pref("userChrome.tab.sound_with_favicons.on_center",   false);
 user_pref("userChrome.tab.selected_bold",                   false);
 
