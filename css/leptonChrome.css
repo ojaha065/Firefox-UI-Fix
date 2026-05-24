@@ -214,7 +214,7 @@
   /*= Tabpreviw transparent #890 ===============================================*/
   #tab-preview-panel {
     --panel-background: var(
-      --arrowpanel-background
+      /* --arrowpanel-background */
     ) !important; /* Original: var(--tab-selected-bgcolor, var(--toolbar-bgcolor)) */
     --panel-color: var(
       --arrowpanel-color
